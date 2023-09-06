@@ -1,75 +1,44 @@
 import React from 'react'
-// import { logo } from '../images/logo.svg'
+import  logo2 from '../images/logo3.png'
+import {pageLinks, socialLinks} from '../data.js'
+
 export const Navbar = () => {
   return (
     <div>
       <nav className='navbar'>
         <div className='nav-center'>
           <div class='nav-header'>
-            <img src='' class='nav-logo' alt='myTravel' />
+            <img src={logo2} class='nav-logo' alt='myTravel' />
             <button type='button' class='nav-toggle' id='nav-toggle'>
               <i class='fas fa-bars'></i>
             </button>
           </div>
 
           <ul class='nav-links' id='nav-links'>
-            <li>
-              <a href='#home' class='nav-link'>
-                {' '}
-                home{' '}
-              </a>
+           {pageLinks.map((link) => {
+             return <li key={link.id}>
+             <a href={link.href} className='nav-link'>
+              {link.text}
+             </a>
             </li>
-
-            <li>
-              <a href='#about' class='nav-link'>
-                {' '}
-                about{' '}
-              </a>
-            </li>
-
-            <li>
-              <a href='#services' class='nav-link'>
-                {' '}
-                services{' '}
-              </a>
-            </li>
-
-            <li>
-              <a href='#tours' class='nav-link'>
-                {' '}
-                tours
-              </a>
-            </li>
+           })}
           </ul>
 
           <ul class='nav-icons'>
+           {socialLinks.map((link) => {
+            return( 
             <li>
               <a
-                href='https://www.twitter.com'
+                href={link.href}
                 target='_blank'
-                class='nav-icon'
+                className='nav-icon'
               >
-                <i class='fab fa-facebook'></i>
+                <i className={link.icon}></i>
               </a>
             </li>
-            <li>
-              <a
-                href='https://www.twitter.com'
-                target='_blank'
-                class='nav-icon'
-              >
-                <i class='fab fa-twitter'></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.twitter.com'
-                target='_blank'
-                class='nav-icon'
-              >
-                <i class='fab fa-squarespace'></i>
-              </a>
-            </li>
+             )
+           })}
+  
           </ul>
         </div>
       </nav>

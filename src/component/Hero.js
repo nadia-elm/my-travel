@@ -5,10 +5,15 @@ export const Hero = () => {
     <div>
       <section class='hero' id='home'>
         <div class='hero-banner'>
-          <h1>continue exploring</h1>
+          <h1>
+            Welcome to <span>my</span>
+            <span id="logo">Travel</span> Tours
+          </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            explicabo debitis est autem dicta.
+            myTravel is a major travel company based in Morocco, entirely
+            dedicated to the travel industry. It is a business-to-business
+            provider for wholesalers, travel operators, corporate companies as
+            well as sport organizations.
           </p>
           <a href='#tours' class='btn hero-btn'>
             explore tours
