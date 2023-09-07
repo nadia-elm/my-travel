@@ -26,17 +26,14 @@ export const Navbar = () => {
 
           <ul class='nav-icons'>
            {socialLinks.map((link) => {
-            return( 
-            <li>
-              <a
-                href={link.href}
-                target='_blank'
-                className='nav-icon'
-              >
-                <i className={link.icon}></i>
-              </a>
-            </li>
-             )
+            return (
+              <li>
+                <a href={link.href} target='_blank'
+                 rel='noopener noreferrer'
+                  className='nav-icon' ><i className={link.icon}></i>
+                </a>
+              </li>
+            )
            })}
   
           </ul>

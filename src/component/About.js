@@ -29,7 +29,7 @@ export const About = () => {
               Aspernatur quisquam harum nam cumque temporibus explicabo dolorum
               sapiente odio unde dolor?
             </p>
-            <a href='#' class='btn'>
+            <a href='#about' class='btn'>
               read more
             </a>
           </article>
