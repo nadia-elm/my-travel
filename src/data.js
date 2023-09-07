@@ -1,7 +1,7 @@
 import athensImg from './images/athens.avif'
 import romeImg from './images/roma.avif'
 import istanbulImg from './images/istanbul.avif'
-import maldivesImg from './images/maldives copy.jpg'
+// import maldivesImg from './images/maldives copy.jpg'
 import kenyaImg from './images/kenya.avif'
 
 export const pageLinks = [
